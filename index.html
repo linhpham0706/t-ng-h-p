@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới Thiệu Bản Thân</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #dff2e1, #ffffff);
+      color: #333;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #4CAF50, #66bb6a);
+      color: white;
+      padding: 25px 0;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background-color: #333;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #4CAF50;
+      bottom: -4px;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4CAF50;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .content {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      margin-top: 30px;
+    }
+
+    .avatar {
+      width: 220px;
+      max-width: 80%;
+      border-radius: 12px;
+      border: 5px solid #4CAF50;
+      margin: 30px 0;
+    }
+
+    h1, h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .green-box {
+      background-color: #e0f7e9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: inline-block;
+      max-width: 90%;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .exercise-links {
+      background: #f1f1f1;
+      padding: 25px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .exercise-links a {
+      display: block;
+      margin: 8px 0;
+      color: #4CAF50;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .exercise-links a:hover {
+      color: #222;
+      transform: translateX(5px);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 14px 0;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        font-size: 22px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .avatar {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <i class="fas fa-user-circle"></i> Giới Thiệu Bản Thân
+  </header>
+
+  <nav>
+    <a href="#about"><i class="fas fa-user"></i> Giới thiệu</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a>
+    <a href="#image"><i class="fas fa-image"></i> Hình ảnh</a>
+    <a href="#hobbies"><i class="fas fa-heart"></i> Sở thích</a>
+    <a href="#exercises"><i class="fas fa-book"></i> Bài tập</a>
+  </nav>
+
+  <div class="content">
+
+    <section id="about">
+      <h1>Xin chào, tôi là Phạm Khánh Linh</h1>
+      <div class="green-box">
+        <p>Tôi là sinh viên của Trường Đại học Thủ Đô Hà Nội. Tôi yêu thích công nghệ và mong muốn phát triển kỹ năng trong lĩnh vực thiết kế web.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📧 Thông tin liên hệ</h2>
+      <div class="green-box">
+        <p>Email: <a href="mailto:phamkhanhlinh07062006@gmail.com">phamkhanhlinh07062006@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section id="image">
+      <h2>🖼️ Hình ảnh</h2>
+      <img class="avatar" src="https://vntime.vn/wp-content/uploads/2024/10/meo-cute-40PnmDr8.jpg" alt="Ảnh cá nhân" />
+    </section>
+
+    <section id="hobbies">
+      <h2>💖 Sở thích</h2>
+      <div class="green-box">
+        <p>Tôi thích vẽ tranh, nghe nhạc, du lịch và đọc sách. Ngoài ra, tôi còn đam mê công nghệ và thiết kế web.</p>
+      </div>
+    </section>
+
+    <section id="exercises">
+      <h2>📚 Bài tập các buổi học</h2>
+      <div class="exercise-links">
+        <a href="https://linhpham0706.github.io/b-i-t-p-bu-i-1/" target="_blank">Buổi 1</a>
+        <a href="https://linhpham0706.github.io/bt-bu-i-3/" target="_blank">Buổi 3</a>
+        <a href="https://linhpham0706.github.io/bu-i4/" target="_blank">Buổi 4</a>
+        <a href="https://linhpham0706.github.io/bu-i-5/" target="_blank">Buổi4t</a>
+        <a href="https://linhpham0706.github.io/bu-i-6/" target="_blank">Buổi 6</a>
+        <a href="https://linhpham0706.github.io/b7/" target="_blank">Buổi 7</a>
+        <a href="https://linhpham0706.github.io/bbuoi7/" target="_blank">Buổi7t</a>
+        <a href="https://linhpham0706.github.io/bu-i-7/" target="_blank">Buổi 8</a>
+        <a href="https://linhpham0706.github.io/bu-i-8/" target="_blank">Buổi 9</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Phạm Khánh Linh | <a href="https://facebook.com/PhamKhanhLinh" target="_blank">Facebook</a></p>
+  </footer>
+
+</body>
+</html>
